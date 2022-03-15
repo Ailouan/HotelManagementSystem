@@ -102,12 +102,13 @@ namespace MyHotelHD
                 {
                     MessageBox.Show(ex.Message);
                 }
+        }
 
-}
         private void button1_Click(object sender, EventArgs e)
         {
             Booking();
             ChargeBooking();
+            setAvailable();
         }
 
         private void Rcb_SelectionChangeCommitted(object sender, EventArgs e)
@@ -134,6 +135,45 @@ namespace MyHotelHD
                 }
             }
             
+        }
+        int key = 0;
+        private void setAvailable()
+        {
+            try
+            {
+                cnx.Open();
+                SqlCommand cmd = new SqlCommand("Update RoomTbl set RStatus = @RS where RNum = @key", cnx);
+                cmd.Parameters.AddWithValue("@RS", "Booked");
+                cmd.Parameters.AddWithValue("@Key", key);
+                cmd.ExecuteNonQuery();
+                cnx.Close();
+                ChargeBooking();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+
+                Rcb.Text = row.Cells["Room"].Value.ToString();
+                Ccb.Text = row.Cells["Customer"].Value.ToString();
+                Duration.Text = row.Cells["Duration"].Value.ToString();
+                Amount.Text = row.Cells["Const"].Value.ToString();
+
+                if (Rcb.Text == "")
+                {
+                    key = 0;
+                }
+                else
+                {
+                    key = Convert.ToInt32(row.Cells["RNum"].Value.ToString());
+                }
+            }
         }
     }
 }

@@ -249,6 +249,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1004, 404);
             this.dataGridView1.TabIndex = 17;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label10
             // 
@@ -307,6 +308,7 @@
             this.Amount.Name = "Amount";
             this.Amount.Size = new System.Drawing.Size(168, 26);
             this.Amount.TabIndex = 0;
+            this.Amount.Text = "Rs ";
             // 
             // Duration
             // 
