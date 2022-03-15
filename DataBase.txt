@@ -1,0 +1,48 @@
+CREATE TABLE [dbo].[RoomTbl] (
+    [RNum]    INT           IDENTITY (1, 1) NOT NULL,
+    [RName]   NVARCHAR (50) NOT NULL,
+    [Rtype]   INT           NOT NULL,
+    [RStatus] NVARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([RNum] ASC),
+    CONSTRAINT [FK1] FOREIGN KEY ([Rtype]) REFERENCES [dbo].[TYpeTbl] ([TypeNum])
+);
+
+CREATE TABLE [dbo].[TYpeTbl] (
+    [TypeNum]  INT           IDENTITY (1, 1) NOT NULL,
+    [TypeName] NVARCHAR (50) NOT NULL,
+    [TypeCost] INT           NOT NULL,
+    PRIMARY KEY CLUSTERED ([TypeNum] ASC)
+);
+
+
+CREATE TABLE [dbo].[BookingTbl] (
+    [BookNum]  INT  IDENTITY (1, 1) NOT NULL,
+    [Room]     INT  NOT NULL,
+    [Customer] INT  NOT NULL,
+    [BookDate] DATE NOT NULL,
+    [Duration] INT  NOT NULL,
+    [Cost]     INT  NOT NULL,
+    PRIMARY KEY CLUSTERED ([BookNum] ASC),
+    CONSTRAINT [FK2] FOREIGN KEY ([Room]) REFERENCES [dbo].[RoomTbl] ([RNum]),
+    CONSTRAINT [FK3] FOREIGN KEY ([Customer]) REFERENCES [dbo].[CustomerTbl] ([CustNum])
+);
+
+CREATE TABLE [dbo].[CustomerTbl] (
+    [CustNum]    INT          IDENTITY (100, 1) NOT NULL,
+    [CustName]   VARCHAR (50) NOT NULL,
+    [CustPhone]  VARCHAR (50) NOT NULL,
+    [CustGender] VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([CustNum] ASC)
+);
+
+CREATE TABLE [dbo].[BookingTbl] (
+    [BookNum]  INT  IDENTITY (1, 1) NOT NULL,
+    [Room]     INT  NOT NULL,
+    [Customer] INT  NOT NULL,
+    [BookDate] DATE NOT NULL,
+    [Duration] INT  NOT NULL,
+    [Cost]     INT  NOT NULL,
+    PRIMARY KEY CLUSTERED ([BookNum] ASC),
+    CONSTRAINT [FK2] FOREIGN KEY ([Room]) REFERENCES [dbo].[RoomTbl] ([RNum]),
+    CONSTRAINT [FK3] FOREIGN KEY ([Customer]) REFERENCES [dbo].[CustomerTbl] ([CustNum])
+);

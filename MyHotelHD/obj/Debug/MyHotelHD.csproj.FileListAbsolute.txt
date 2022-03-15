@@ -1,0 +1,14 @@
+C:\Users\Acer\Desktop\CSharp Application\MyHotelHD\MyHotelHD\bin\Debug\MyHotelHD.exe.config
+C:\Users\Acer\Desktop\CSharp Application\MyHotelHD\MyHotelHD\bin\Debug\MyHotelHD.exe
+C:\Users\Acer\Desktop\CSharp Application\MyHotelHD\MyHotelHD\bin\Debug\MyHotelHD.pdb
+C:\Users\Acer\Desktop\CSharp Application\MyHotelHD\MyHotelHD\obj\Debug\MyHotelHD.csprojAssemblyReference.cache
+C:\Users\Acer\Desktop\CSharp Application\MyHotelHD\MyHotelHD\obj\Debug\MyHotelHD.Properties.Resources.resources
+C:\Users\Acer\Desktop\CSharp Application\MyHotelHD\MyHotelHD\obj\Debug\MyHotelHD.csproj.GenerateResource.cache
+C:\Users\Acer\Desktop\CSharp Application\MyHotelHD\MyHotelHD\obj\Debug\MyHotelHD.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Desktop\CSharp Application\MyHotelHD\MyHotelHD\obj\Debug\MyHotelHD.exe
+C:\Users\Acer\Desktop\CSharp Application\MyHotelHD\MyHotelHD\obj\Debug\MyHotelHD.pdb
+C:\Users\Acer\Desktop\CSharp Application\MyHotelHD\MyHotelHD\obj\Debug\MyHotelHD.Bookings.resources
+C:\Users\Acer\Desktop\CSharp Application\MyHotelHD\MyHotelHD\obj\Debug\MyHotelHD.Customers.resources
+C:\Users\Acer\Desktop\CSharp Application\MyHotelHD\MyHotelHD\obj\Debug\MyHotelHD.Rooms.resources
+C:\Users\Acer\Desktop\CSharp Application\MyHotelHD\MyHotelHD\obj\Debug\MyHotelHD.Categories.resources
+C:\Users\Acer\Desktop\CSharp Application\MyHotelHD\MyHotelHD\obj\Debug\MyHotelHD.Users.resources
