@@ -136,7 +136,46 @@ namespace MyHotelHD
             }
             
         }
+        private void CancelBookRoom()
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Pleas Selectione The Booking");
+            }
+            else
+                try
+                {
+                    cnx.Open();
+                    SqlCommand cmd = new SqlCommand("Delete BookingTbl where BookNum = @key", cnx);
+                    cmd.Parameters.AddWithValue("@Key", key);
+                    cmd.ExecuteNonQuery();
+                    cnx.Close();
+                    ChargeBooking();
+                    MessageBox.Show("Bookings Room Canceled");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+        }
         int key = 0;
+        private void setBooking()
+        {
+            try
+            {
+                cnx.Open();
+                SqlCommand cmd = new SqlCommand("Update RoomTbl set RStatus = @RS where RNum = @key", cnx);
+                cmd.Parameters.AddWithValue("@RS", "Available");
+                cmd.Parameters.AddWithValue("@Key", key);
+                cmd.ExecuteNonQuery();
+                cnx.Close();
+                ChargeBooking();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void setAvailable()
         {
             try
@@ -163,7 +202,7 @@ namespace MyHotelHD
                 Rcb.Text = row.Cells["Room"].Value.ToString();
                 Ccb.Text = row.Cells["Customer"].Value.ToString();
                 Duration.Text = row.Cells["Duration"].Value.ToString();
-                Amount.Text = row.Cells["Const"].Value.ToString();
+                Amount.Text = row.Cells["Cost"].Value.ToString();
 
                 if (Rcb.Text == "")
                 {
@@ -171,9 +210,19 @@ namespace MyHotelHD
                 }
                 else
                 {
-                    key = Convert.ToInt32(row.Cells["RNum"].Value.ToString());
+                    key = Convert.ToInt32(row.Cells["BookNum"].Value.ToString());
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CancelBookRoom();
+            setBooking();
+            Rcb.Text = "";
+            Ccb.Text = "";
+            Duration.Text = "";
+            Amount.Text = "";
         }
     }
 }
