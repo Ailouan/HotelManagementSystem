@@ -16,7 +16,7 @@ namespace MyHotelHD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Bookings());
+            Application.Run(new login());
         }
     }
 }
