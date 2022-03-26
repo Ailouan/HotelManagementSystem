@@ -39,11 +39,29 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.Ilbl = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.Dlbl = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.BFlbl = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.Clbl = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.Rlbl = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.RoomsDgd = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
-            this.StatusCb = new System.Windows.Forms.ComboBox();
+            this.Ccbx = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -53,25 +71,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.datm = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -79,21 +79,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RoomsDgd)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel14.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox6
@@ -198,19 +198,190 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightGray;
+            this.panel2.CausesValidation = false;
+            this.panel2.Controls.Add(this.datm);
             this.panel2.Controls.Add(this.panel14);
             this.panel2.Controls.Add(this.panel13);
-            this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.panel12);
             this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.panel10);
             this.panel2.Controls.Add(this.RoomsDgd);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.StatusCb);
+            this.panel2.Controls.Add(this.Ccbx);
             this.panel2.Location = new System.Drawing.Point(201, 95);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1013, 589);
             this.panel2.TabIndex = 0;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.Red;
+            this.panel14.Controls.Add(this.Ilbl);
+            this.panel14.Controls.Add(this.label14);
+            this.panel14.Location = new System.Drawing.Point(554, 222);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(223, 73);
+            this.panel14.TabIndex = 20;
+            // 
+            // Ilbl
+            // 
+            this.Ilbl.AutoSize = true;
+            this.Ilbl.BackColor = System.Drawing.Color.Transparent;
+            this.Ilbl.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ilbl.ForeColor = System.Drawing.Color.White;
+            this.Ilbl.Location = new System.Drawing.Point(30, 39);
+            this.Ilbl.Name = "Ilbl";
+            this.Ilbl.Size = new System.Drawing.Size(34, 25);
+            this.Ilbl.TabIndex = 22;
+            this.Ilbl.Text = "Rs";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(3, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(221, 25);
+            this.label14.TabIndex = 22;
+            this.label14.Text = "Income by Customer";
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Red;
+            this.panel13.Controls.Add(this.Dlbl);
+            this.panel13.Controls.Add(this.label13);
+            this.panel13.Location = new System.Drawing.Point(249, 222);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(193, 73);
+            this.panel13.TabIndex = 19;
+            // 
+            // Dlbl
+            // 
+            this.Dlbl.AutoSize = true;
+            this.Dlbl.BackColor = System.Drawing.Color.Transparent;
+            this.Dlbl.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dlbl.ForeColor = System.Drawing.Color.White;
+            this.Dlbl.Location = new System.Drawing.Point(26, 39);
+            this.Dlbl.Name = "Dlbl";
+            this.Dlbl.Size = new System.Drawing.Size(34, 25);
+            this.Dlbl.TabIndex = 10;
+            this.Dlbl.Text = "Rs";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(3, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(144, 25);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "Daily Income";
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.Lime;
+            this.panel12.Controls.Add(this.BFlbl);
+            this.panel12.Controls.Add(this.label12);
+            this.panel12.Location = new System.Drawing.Point(698, 74);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(193, 73);
+            this.panel12.TabIndex = 19;
+            // 
+            // BFlbl
+            // 
+            this.BFlbl.AutoSize = true;
+            this.BFlbl.BackColor = System.Drawing.Color.Transparent;
+            this.BFlbl.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BFlbl.ForeColor = System.Drawing.Color.White;
+            this.BFlbl.Location = new System.Drawing.Point(26, 35);
+            this.BFlbl.Name = "BFlbl";
+            this.BFlbl.Size = new System.Drawing.Size(34, 25);
+            this.BFlbl.TabIndex = 9;
+            this.BFlbl.Text = "Rs";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(3, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(187, 25);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "Bookings Finance";
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Olive;
+            this.panel11.Controls.Add(this.Clbl);
+            this.panel11.Controls.Add(this.label9);
+            this.panel11.Location = new System.Drawing.Point(392, 74);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(193, 73);
+            this.panel11.TabIndex = 19;
+            // 
+            // Clbl
+            // 
+            this.Clbl.AutoSize = true;
+            this.Clbl.BackColor = System.Drawing.Color.Transparent;
+            this.Clbl.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clbl.ForeColor = System.Drawing.Color.White;
+            this.Clbl.Location = new System.Drawing.Point(26, 35);
+            this.Clbl.Name = "Clbl";
+            this.Clbl.Size = new System.Drawing.Size(34, 25);
+            this.Clbl.TabIndex = 8;
+            this.Clbl.Text = "Rs";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(3, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(116, 25);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Customers";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Blue;
+            this.panel10.Controls.Add(this.Rlbl);
+            this.panel10.Controls.Add(this.label8);
+            this.panel10.Location = new System.Drawing.Point(93, 74);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(193, 73);
+            this.panel10.TabIndex = 18;
+            // 
+            // Rlbl
+            // 
+            this.Rlbl.AutoSize = true;
+            this.Rlbl.BackColor = System.Drawing.Color.Transparent;
+            this.Rlbl.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rlbl.ForeColor = System.Drawing.Color.White;
+            this.Rlbl.Location = new System.Drawing.Point(22, 35);
+            this.Rlbl.Name = "Rlbl";
+            this.Rlbl.Size = new System.Drawing.Size(34, 25);
+            this.Rlbl.TabIndex = 7;
+            this.Rlbl.Text = "Rs";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(3, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(86, 25);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "Romms";
             // 
             // RoomsDgd
             // 
@@ -235,17 +406,20 @@
             this.label10.TabIndex = 16;
             this.label10.Text = "Hotel Analytics";
             // 
-            // StatusCb
+            // Ccbx
             // 
-            this.StatusCb.FormattingEnabled = true;
-            this.StatusCb.Items.AddRange(new object[] {
+            this.Ccbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Ccbx.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.Ccbx.FormattingEnabled = true;
+            this.Ccbx.Items.AddRange(new object[] {
             "Booked",
             "Available"});
-            this.StatusCb.Location = new System.Drawing.Point(259, 169);
-            this.StatusCb.Name = "StatusCb";
-            this.StatusCb.Size = new System.Drawing.Size(200, 21);
-            this.StatusCb.TabIndex = 3;
-            this.StatusCb.Text = "Status";
+            this.Ccbx.Location = new System.Drawing.Point(562, 170);
+            this.Ccbx.Name = "Ccbx";
+            this.Ccbx.Size = new System.Drawing.Size(140, 21);
+            this.Ccbx.TabIndex = 3;
+            this.Ccbx.Text = "Customer";
+            this.Ccbx.SelectedIndexChanged += new System.EventHandler(this.Ccbx_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -272,6 +446,39 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1214, 687);
             this.panel1.TabIndex = 18;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel4.Location = new System.Drawing.Point(0, 159);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 46);
+            this.panel4.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(52, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 25);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Romms";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(11, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(34, 44);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // panel7
             // 
@@ -372,215 +579,16 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel4
+            // datm
             // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel4.Location = new System.Drawing.Point(0, 159);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 46);
-            this.panel4.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(52, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 25);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Romms";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(11, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(34, 44);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Blue;
-            this.panel10.Controls.Add(this.label15);
-            this.panel10.Controls.Add(this.label8);
-            this.panel10.Location = new System.Drawing.Point(93, 74);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(193, 73);
-            this.panel10.TabIndex = 18;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.Olive;
-            this.panel11.Controls.Add(this.label16);
-            this.panel11.Controls.Add(this.label9);
-            this.panel11.Location = new System.Drawing.Point(392, 74);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(193, 73);
-            this.panel11.TabIndex = 19;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.Lime;
-            this.panel12.Controls.Add(this.label17);
-            this.panel12.Controls.Add(this.label12);
-            this.panel12.Location = new System.Drawing.Point(698, 74);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(193, 73);
-            this.panel12.TabIndex = 19;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(529, 170);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 20;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Red;
-            this.panel13.Controls.Add(this.label18);
-            this.panel13.Controls.Add(this.label13);
-            this.panel13.Location = new System.Drawing.Point(249, 222);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(193, 73);
-            this.panel13.TabIndex = 19;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.Red;
-            this.panel14.Controls.Add(this.label19);
-            this.panel14.Controls.Add(this.label14);
-            this.panel14.Location = new System.Drawing.Point(554, 222);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(223, 73);
-            this.panel14.TabIndex = 20;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(3, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 25);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Romms";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(3, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(116, 25);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Customers";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(3, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(187, 25);
-            this.label12.TabIndex = 8;
-            this.label12.Text = "Bookings Finance";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(3, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(144, 25);
-            this.label13.TabIndex = 21;
-            this.label13.Text = "Daily Income";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(3, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(221, 25);
-            this.label14.TabIndex = 22;
-            this.label14.Text = "Income by Customer";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(23, 35);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(34, 25);
-            this.label15.TabIndex = 7;
-            this.label15.Text = "Rs";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(25, 35);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(34, 25);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "Rs";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(32, 42);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(34, 25);
-            this.label17.TabIndex = 9;
-            this.label17.Text = "Rs";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(18, 39);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(34, 25);
-            this.label18.TabIndex = 10;
-            this.label18.Text = "Rs";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(19, 39);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(34, 25);
-            this.label19.TabIndex = 22;
-            this.label19.Text = "Rs";
+            this.datm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.datm.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datm.Location = new System.Drawing.Point(351, 169);
+            this.datm.Name = "datm";
+            this.datm.Size = new System.Drawing.Size(147, 26);
+            this.datm.TabIndex = 22;
+            this.datm.Value = new System.DateTime(2022, 3, 24, 0, 0, 0, 0);
+            this.datm.ValueChanged += new System.EventHandler(this.datm_ValueChanged);
             // 
             // Dashboard
             // 
@@ -594,6 +602,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -607,9 +616,22 @@
             this.panel6.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RoomsDgd)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -619,19 +641,6 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -650,7 +659,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView RoomsDgd;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox StatusCb;
+        private System.Windows.Forms.ComboBox Ccbx;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
@@ -666,20 +675,20 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label Ilbl;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label Dlbl;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label BFlbl;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label Clbl;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label Rlbl;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker datm;
     }
 }

@@ -224,5 +224,10 @@ namespace MyHotelHD
             Duration.Text = "";
             Amount.Text = "";
         }
+
+        private void Bookings_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
